@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +17,6 @@
 }
 
 .App-header {
-  background-color: blue;
   min-height: 100vh;
   max-width: 738px;
   width: 100%;
@@ -54,7 +52,6 @@
   max-width: 738px;
   width: 100%;
   /* padding: 16px; */
-  background-color: green;
   align-items: stretch;
 
 }

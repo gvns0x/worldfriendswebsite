@@ -5,7 +5,6 @@
 
 .Header {
     display: flex;
-    background-color: yellow;
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -15,9 +14,24 @@
     padding: 16px 16px;
 }
 
+.Header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    justify-content: start;
+}
+
+.LogoText {
+    width: auto;
+    height: 18px;
+}
+
 @media screen and (min-width: 738px) {
     .Header {
         width: 100%;
         padding: 16px 0px;
     }
 }
+
+
