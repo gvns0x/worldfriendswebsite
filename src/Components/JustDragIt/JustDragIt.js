@@ -1,5 +1,6 @@
 import React from 'react';
 import './JustDragIt.css'
+import DragSymbol from '../../Images/dragsymbol.png'
 
 const JustDragIt = () => {
     return (
@@ -8,7 +9,11 @@ const JustDragIt = () => {
             <h2 className='JustDragIt-title' id='JustDragIt-2'>If it’s 3pm here, what time is it for Mero?</h2>
             <h2 className='JustDragIt-title' id='JustDragIt-3'>When is it a good time to call Fran?</h2>
             <h2 className='JustDragIt-title' id='JustDragIt-4'>Rahul is in the US now, what time is it there?</h2>
-            <h2 className='JustDragItFinal'>Just drag it.</h2>
+            <div className='JustDragIt-content'>
+                <h2 className='JustDragItFinal'>Just drag</h2>
+                <img className="DragSymbol" src={DragSymbol}/>
+                <h2 className='JustDragItFinal'>it.</h2>
+                </div>
         </div>
     );
 };

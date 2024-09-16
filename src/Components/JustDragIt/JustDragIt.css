@@ -1,13 +1,40 @@
+.JustDragIt {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 .JustDragIt-title {
-    font-size: 34px;
-    text-align: left;
-    font-weight: 500;
     text-decoration: line-through;
     color: #999999;
 }
 
-.JustDragItFinal {
+.JustDragIt-title, .JustDragItFinal {
     font-size: 34px;
+    line-height: 130%;
     text-align: left;
     font-weight: 500;
+}
+
+.DragSymbol {
+    height: 20px;
+    width: auto;
+}
+
+.JustDragIt-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+@media screen and (min-width: 738px) {
+.DragSymbol {
+    height: 40px;
+}
+
+.JustDragIt-title, .JustDragItFinal {
+    font-size: 34px;
+}
+
 }
