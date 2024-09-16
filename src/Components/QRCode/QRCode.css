@@ -1,0 +1,28 @@
+.qr-code-container {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #000000, #2F363B);
+    border: 1.5px solid #0D111F;
+}
+
+.qr-code-border {
+    border-radius: 19px;
+    border: 1px solid rgba(255, 255,255,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 148px;
+    height: 148px;
+    box-shadow: 0 -2px 30px rgba(147, 197, 251, 0.1),
+                0 2px 30px rgba(58, 207, 213, 0.2),
+                0 2px 28px rgba(0, 0, 0, 0.05);
+    
+}
+
+.qr-code-image {
+    width: 120px;
+}

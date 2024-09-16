@@ -1,0 +1,76 @@
+.Hero-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.Hero {
+    margin-top: 128px;
+    background-color: #f5f5f5;
+    border-radius: 24px;
+    padding: 24px 24px 0px 24px;
+}
+
+.Hero h1 {
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 100%;
+    color: #000;
+    text-align: left;
+    margin:0px;
+}
+
+.Hero-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.Hero-conditional-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+}
+
+.Hero-subtext-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 4px;
+}
+
+.Hero-subtext {
+    font-size: 13px;
+    columns: #000;
+}
+
+a {
+    color: #000;
+}
+
+.Hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hero-image {
+    width: 100%;
+    max-width: 500px;
+}
+
+@media screen and (min-width: 738px) {
+    .Hero-content {
+        flex-direction: row;
+    }
+
+    .Hero-text-container {
+        width: 100%;
+    }
+
+    .Hero-image {
+        width: 100%;
+        max-width: 363px;
+    }
+    
+}

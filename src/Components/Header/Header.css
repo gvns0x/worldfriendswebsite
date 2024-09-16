@@ -1,0 +1,23 @@
+.Logo {
+    width: auto;
+    height: 24px;
+}
+
+.Header {
+    display: flex;
+    background-color: yellow;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    max-width: 738px;
+    width: calc(100% - 32px);
+    padding: 16px 16px;
+}
+
+@media screen and (min-width: 738px) {
+    .Header {
+        width: 100%;
+        padding: 16px 0px;
+    }
+}
