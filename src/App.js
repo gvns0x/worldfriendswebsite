@@ -3,6 +3,7 @@ import Header from './Components/Header/Header.js'
 import Feature from './Components/Feature/Feature.js';
 import logo from './logo.svg';
 import Hero from './Components/Hero/Hero.js';
+import JustDragIt from './Components/JustDragIt/JustDragIt.js';
 // Features
 
 import Timezones from './Images/FeatureImages/Property 1=1_Timezones.png'
@@ -17,6 +18,7 @@ function App() {
       <header className="App-header">
         <Header/>
         <Hero/>
+        <JustDragIt/>
         <div className='Feature-container'>
           <Feature title="Add people in any timezone" description="All you need is someone’s name and their location. " image={Timezones} />
           <Feature title="Group people who are in the same time" description="To avoid display duplicate times, people in the same time are automatically grouped." image={Grouping} />
