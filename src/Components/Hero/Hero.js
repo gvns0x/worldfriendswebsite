@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../../logo.svg';
 import './Hero.css';
 import QRCode from '../QRCode/QRCode';
 import HeroPhone from '../../Images/herophone.png';
