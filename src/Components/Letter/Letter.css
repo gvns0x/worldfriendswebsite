@@ -1,5 +1,5 @@
 .Letter p {
-    font-size: 34px;
+    font-size: 24px;
     text-align: left;
     line-height: 140%;
     color: #8c8c8c;
@@ -10,4 +10,18 @@
     width: auto;
     opacity: 45%;
     margin-right: 6px;
+}
+
+.Letter {
+    margin-bottom: 100px;
+}
+
+.LetterLink {
+    color: #8c8c8c;
+}
+
+@media screen and (min-width: 738px) {
+    .Letter p {
+        font-size: 34px;
+    }
 }

@@ -13,7 +13,7 @@ Globezones <img className="GlobezonesSentenceLogo" src={Logo}/> helps me see whe
 <br/><br/>
 I use it every day. Hopefully it can be useful for you to.
 <br/><br/>
-If you are using globezones, I’d love to know about it. Hopefully you have feedback that can help improve it. DM me on Twitter.
+If you are using globezones, I’d love to know about it. Hopefully you have feedback that can help improve it. <a className="LetterLink" href="https://x.com/gvns0x" target='_blank'>DM me on X.</a>
 <br/><br/>
 Have a great time,<br/>
 João</p>
