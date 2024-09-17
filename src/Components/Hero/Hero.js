@@ -27,7 +27,7 @@ const Hero = () => {
                     </div>
                     <div className="Hero-subtext-container">
                     <p className="Hero-subtext">Scan the QR to download for iPhone</p>
-                    <a href="#" className="Hero-subtext">or visit the AppStore</a>
+                    <a rel="noreferrer" href="http://globalzones.com/" className="Hero-subtext">or visit the AppStore</a>
                     </div>
                 </div>
                 </div>
