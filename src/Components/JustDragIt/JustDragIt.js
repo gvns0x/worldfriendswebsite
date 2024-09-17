@@ -1,6 +1,5 @@
 import React from 'react';
 import './JustDragIt.css'
-import DragSymbol from '../../Images/dragsymbol.png'
 import DragFeature from '../DragFeature/DragFeature';
 
 const JustDragIt = () => {
