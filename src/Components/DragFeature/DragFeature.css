@@ -1,0 +1,34 @@
+.drag-bar {
+    width: 150px;
+    height: 29px;
+    border-radius: 20px;
+    background-color: #E3F8FE;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* This ensures the fill stays inside */
+    transition: width 0.1s, background-color 0.2s; /* Added transition for background-color */
+  }
+  
+  .fill {
+    background: linear-gradient(to bottom, 
+      #E5FBFF 0%,    /* Start color */
+      #C5F8FF 12%,   /* Gradient stop 12% */
+      #97EAFF 82%,   /* Gradient stop 82% */
+      #89E9FF 89%,   /* Gradient stop 89% */
+      #97EAFF 100%   /* End color */
+    );
+    border-radius: 20px 0px 0px 20px;
+    height: 100%;
+    transition: width 0.1s;
+    width: 0%; /* Initial width set to 0, will be updated dynamically */
+    transition: width 0.1s, background-color 0.3s; /* Added transition for background-color */
+  }
+
+  @media screen and (min-width: 738px) {
+    .drag-bar {
+        width: 250px;
+        height: 48px;
+    }
+  }

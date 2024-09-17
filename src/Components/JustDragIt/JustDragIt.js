@@ -1,6 +1,7 @@
 import React from 'react';
 import './JustDragIt.css'
 import DragSymbol from '../../Images/dragsymbol.png'
+import DragFeature from '../DragFeature/DragFeature';
 
 const JustDragIt = () => {
     return (
@@ -11,9 +12,11 @@ const JustDragIt = () => {
             <h2 className='JustDragIt-title' id='JustDragIt-4'>Rahul landed in the US, what time is it there?</h2>
             <div className='JustDragIt-content'>
                 <h2 className='JustDragItFinal'>Just drag</h2>
-                <img className="DragSymbol" src={DragSymbol}/>
+                {/* <img className="DragSymbol" src={DragSymbol}/> */}
+                <DragFeature/>
                 <h2 className='JustDragItFinal'>it.</h2>
                 </div>
+                
         </div>
     );
 };
