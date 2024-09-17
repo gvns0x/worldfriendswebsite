@@ -1,9 +1,10 @@
 import './App.css';
 import Header from './Components/Header/Header.js'
 import Feature from './Components/Feature/Feature.js';
-import logo from './logo.svg';
 import Hero from './Components/Hero/Hero.js';
 import JustDragIt from './Components/JustDragIt/JustDragIt.js';
+import Letter from './Components/Letter/Letter.js'
+
 // Features
 
 import Timezones from './Images/FeatureImages/Property 1=1_Timezones.png'
@@ -26,6 +27,7 @@ function App() {
           <Feature title="Reset to current time by double-tapping anywhere" description="Always go back to the current time by double-tapping anywhere." image={Reset} />
           <Feature title="Define availability windows" description="You can define when people are available. Some people use it for worktimes (8am - 6pm), some use it for when their friends are sleeping (10pm - 8am)." image={Availability} />
         </div>
+        <Letter/>
       </header>
     </div>
   );

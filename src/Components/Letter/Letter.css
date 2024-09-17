@@ -1,0 +1,13 @@
+.Letter p {
+    font-size: 34px;
+    text-align: left;
+    line-height: 140%;
+    color: #8c8c8c;
+}
+
+.GlobezonesSentenceLogo {
+    height: 24px;
+    width: auto;
+    opacity: 45%;
+    margin-right: 6px;
+}

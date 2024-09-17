@@ -10,6 +10,7 @@
     width: 100%;
     gap: 16px;
     min-width: min(100%, 200px); /* Add this line */
+    text-align: left;
 }
 
 .Feature-content {
@@ -19,12 +20,14 @@
     justify-content: center;
     gap: 4px;
 }
-h2 {
+h3 {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 140%;
     color: #000;
     margin: 0px;
+    text-align: left;
+    width: 100%;
 }
 
 p {
