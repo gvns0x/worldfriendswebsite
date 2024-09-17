@@ -5,7 +5,7 @@ const QRCode = () => {
     return (
         <div className='qr-code-container'>
             <div className='qr-code-border'>
-                <img src={qrCode} alt='qr-code' className='qr-code-image'/>
+                <img src={qrCode} alt='QR code' className='qr-code-image'/>
             </div>
         </div>
     )
