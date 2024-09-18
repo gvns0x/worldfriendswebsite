@@ -14,7 +14,7 @@
 }
 
 .qr-code-container:hover {
-    transform: scale(1.08);
+    transform: scale(1.03);
     transition: 0.15s linear;
     box-shadow: 0 -2px 30px rgba(147, 197, 251, 0.1),
                 0 2px 30px rgba(58, 207, 213, 0.2),
