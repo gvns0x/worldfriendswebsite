@@ -7,6 +7,18 @@
     border-radius: 20px;
     background: linear-gradient(to bottom, #000000, #2F363B);
     border: 1.5px solid #0D111F;
+    transition: 0.1s linear;
+    box-shadow: 0 -2px 30px rgba(147, 197, 251, 0.1),
+                0 2px 30px rgba(58, 207, 213, 0.2),
+                0 2px 28px rgba(0, 0, 0, 0.05);
+}
+
+.qr-code-container:hover {
+    transform: scale(1.08);
+    transition: 0.15s linear;
+    box-shadow: 0 -2px 30px rgba(147, 197, 251, 0.1),
+                0 2px 30px rgba(58, 207, 213, 0.2),
+                0 2px 50px rgba(0, 0, 0, 0.2);
 }
 
 .qr-code-border {
@@ -17,9 +29,7 @@
     align-items: center;
     width: 148px;
     height: 148px;
-    box-shadow: 0 -2px 30px rgba(147, 197, 251, 0.1),
-                0 2px 30px rgba(58, 207, 213, 0.2),
-                0 2px 28px rgba(0, 0, 0, 0.05);
+    
     
 }
 

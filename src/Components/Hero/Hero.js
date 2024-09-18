@@ -28,7 +28,7 @@ const Hero = () => {
                     {windowWidth > 500 ? (
                     <div className="Hero-subtext-container">
                     <p className="Hero-subtext">Scan the QR to download for iPhone</p>
-                    <a rel="noreferrer" href="http://globalzones.com/" className="Hero-subtext">or visit the AppStore</a>
+                    <a rel="noreferrer" href="http://globezones.com/" className="Hero-subtext">or visit the AppStore</a>
                     </div>
                     ) : (
                         " "
