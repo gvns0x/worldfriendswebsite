@@ -38,7 +38,7 @@ p {
     margin: 0px;
 }
 
-img {
+.Feature img {
     width: 100%;
     height: auto;
     object-fit: contain;
