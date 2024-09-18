@@ -56,7 +56,7 @@
 
 }
 
-@media screen and (min-width: 728px) {
+@media screen and (min-width: 738px) {
   .Feature-container {
     flex-direction: row;
     flex-wrap: wrap;

@@ -50,10 +50,13 @@ const Header = () => {
                      onMouseLeave={handleCTALeave}
                      onClick={handleCTAClick}>
                     <CTA 
-                        cta={isWideScreen && isHovered ? "Go to AppStore" : "Download for iPhone"}
+                        cta={isWideScreen && isHovered ? "Go to the AppStore" : "Download for iPhone"}
                         isHovered={isHovered}
                         isWideScreen={isWideScreen}
                     />
+                    {isWideScreen && isHovered && (
+                        <div className="additional-text">Scan the QR code or</div>
+                    )}
                     {isWideScreen && (
                         <div className={`QRCode-hover ${showQRCode ? 'visible' : ''}`}>
                             <QRCode />
