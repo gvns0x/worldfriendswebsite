@@ -1,9 +1,41 @@
-button {
-    font-weight: 600;
-    font-size: 15px;
-    padding: 8px 12px;
+.CTA {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
     border-radius: 100px;
-    border: 0px;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CTA:hover {
     background-color: #000;
     color: #fff;
+}
+
+.chevron {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    transition: transform 0.2s ease, color 0.2s ease;
+    color: #000;
+}
+
+.chevron.rotated {
+    transform: rotate(-90deg);
+    color: #fff;
+}
+
+@media (max-width: 500px) {
+    .CTA {
+        padding: 8px 12px;
+        background-color: #000;
+        color: #fff;
+    }
+
 }

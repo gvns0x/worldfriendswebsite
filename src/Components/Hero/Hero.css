@@ -65,6 +65,13 @@ a {
     width: 100%;
 }
 
+.Hero-button {
+    font-weight: 600;
+    background-color: #000;
+    color: #fff;
+    border-radius: 100px;
+}
+
 .Hero-button-big {
     padding: 16px;
     font-size: 18px;
