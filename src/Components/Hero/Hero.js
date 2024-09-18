@@ -19,16 +19,20 @@ const Hero = () => {
                     <h1>Visualize and convert timezones for friends, family and colleagues.</h1>
                     <div className="Hero-conditional-container">
                         <div className="Hero-conditional">
-                            {windowWidth > 435 ? (
+                            {windowWidth > 500 ? (
                             <QRCode/>
                         ) : (
-                            <button className="Hero-button">Click Me</button>
+                            <button className="Hero-button Hero-button-big">Download for iPhone</button>
                         )}
                     </div>
+                    {windowWidth > 500 ? (
                     <div className="Hero-subtext-container">
                     <p className="Hero-subtext">Scan the QR to download for iPhone</p>
                     <a rel="noreferrer" href="http://globalzones.com/" className="Hero-subtext">or visit the AppStore</a>
                     </div>
+                    ) : (
+                        " "
+                    )}
                 </div>
                 </div>
                     <img src={HeroPhone} alt="iPhone with the Globezones app" className="Hero-image" />

@@ -60,6 +60,27 @@ a {
     /* padding-top: 50px; */
 }
 
+.Hero-conditional {
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+.Hero-button-big {
+    padding: 16px;
+    font-size: 18px;
+    width: 100%;
+    box-shadow: 0 -2px 30px rgba(147, 197, 251, 0.1),
+                0 2px 30px rgba(58, 207, 213, 0.2),
+                0 2px 28px rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (min-width: 500px) {
+    .Hero-conditional {
+        margin-bottom: 0px;
+    }
+}
+
+
 @media screen and (min-width: 738px) {
     .Hero-content {
         flex-direction: row;
