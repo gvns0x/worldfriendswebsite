@@ -16,7 +16,7 @@ const Hero = () => {
         <div className='Hero'>
             <div className="Hero-content">
                 <div className="Hero-text-container">
-                    <h1>Visualize and convert timezones for friends, family and colleagues.</h1>
+                    <h1>Visualize and convert timezones for friends, family, and colleagues.</h1>
                     <div className="Hero-conditional-container">
                         <div className="Hero-conditional">
                             {windowWidth > 500 ? (
