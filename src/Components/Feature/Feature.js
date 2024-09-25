@@ -1,11 +1,11 @@
 import './Feature.css';
 
-function Feature({ title, description, image }) {
+function Feature({ title, description, image, titleColor, descriptionColor, bgColor }) {
     return (
-        <div className="Feature">
+        <div style={{ backgroundColor: bgColor }} className="Feature">
             <div className='Feature-content'>
-                <h3>{title}</h3>
-                <p>{description}</p>
+                <h3 style={{ color: titleColor }}>{title}</h3>
+                <p style={{ color: descriptionColor }}>{description}</p>
             </div>
             <img src={image} alt={title} />
         </div>
