@@ -18,7 +18,7 @@ const Hero = () => {
                 <div className="Hero-text-container">
                     <h1>Visualize and convert timezones for friends, family, and colleagues.</h1>
                     <div className="Hero-conditional-container">
-                        <p className='TestFlight-content'>Globezones is available in TestFlight. To request access, <a href="https://x.com/gvns0x" rel="noopener noreferrer" target='_blank'>DM me on X.</a></p>
+                        <p className='TestFlight-content'>Globezones is available on TestFlight. Do you want to try it? <a href="https://x.com/gvns0x" rel="noopener noreferrer" target='_blank'>DM me on X</a> and I'll give you access :)</p>
                         {/* <div className="Hero-conditional">
                             
                             {windowWidth > 500 ? (

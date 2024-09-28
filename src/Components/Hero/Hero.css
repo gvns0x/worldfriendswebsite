@@ -48,6 +48,10 @@ a {
     color: #000;
 }
 
+.TestFlight-content {
+    text-align: left;
+}
+
 .Hero-content {
     display: flex;
     justify-content: center;

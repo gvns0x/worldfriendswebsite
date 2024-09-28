@@ -45,7 +45,7 @@ const Header = () => {
                     <img className="Logo" src={Logo} alt="Globezones logo"/>
                     <img className="LogoText" src={LogoText} alt="globezones"/>
                 </div>
-                <div className="CTA-container"
+                {/*<div className="CTA-container"
                      onMouseEnter={handleCTAHover}
                      onMouseLeave={handleCTALeave}
                      onClick={handleCTAClick}>
@@ -62,7 +62,7 @@ const Header = () => {
                             <QRCode />
                         </div>
                     )}
-                </div>
+                </div>*/}
             </div>
             {isWideScreen && <div className={`blur-overlay ${showQRCode ? 'active' : ''}`}></div>}
         </>
