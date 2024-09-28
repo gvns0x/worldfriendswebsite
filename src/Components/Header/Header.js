@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React/*, { useState, useEffect }*/ from 'react';
 import '../Header/Header.css'
 import Logo from '../../Images/logo.png'
 // import CTA from '../../Components/CTA/CTA.js'
