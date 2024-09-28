@@ -18,7 +18,9 @@ const Hero = () => {
                 <div className="Hero-text-container">
                     <h1>Visualize and convert timezones for friends, family, and colleagues.</h1>
                     <div className="Hero-conditional-container">
-                        <div className="Hero-conditional">
+                        <p className='TestFlight-content'>Globezones is available in TestFlight. To request access, <a href="https://x.com/gvns0x" rel="noopener noreferrer" target='_blank'>DM me on X.</a></p>
+                        {/* <div className="Hero-conditional">
+                            
                             {windowWidth > 500 ? (
                             <QRCode/>
                         ) : (
@@ -32,7 +34,7 @@ const Hero = () => {
                     </div>
                     ) : (
                         " "
-                    )}
+                    )}*/}
                 </div>
                 </div>
                     <img src={HeroPhone} alt="iPhone with the Globezones app" className="Hero-image" />
