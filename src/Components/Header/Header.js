@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import '../Header/Header.css'
 import Logo from '../../Images/logo.png'
-import CTA from '../../Components/CTA/CTA.js'
+// import CTA from '../../Components/CTA/CTA.js'
 import LogoText from '../../Images/logotext.png'
-import QRCode from '../QRCode/QRCode.js'
+// import QRCode from '../QRCode/QRCode.js'
 
 const Header = () => {
-    const [showQRCode, setShowQRCode] = useState(false);
+    /* const [showQRCode, setShowQRCode] = useState(false);
     const [isHovered, setIsHovered] = useState(false);
     const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 500);
 
@@ -36,7 +36,7 @@ const Header = () => {
             setShowQRCode(false);
             setIsHovered(false);
         }
-    };
+    };*/
 
     return (
         <>
@@ -64,7 +64,7 @@ const Header = () => {
                     )}
                 </div>*/}
             </div>
-            {isWideScreen && <div className={`blur-overlay ${showQRCode ? 'active' : ''}`}></div>}
+            {/*{isWideScreen && <div className={`blur-overlay ${showQRCode ? 'active' : ''}`}></div>}*/}
         </>
     );
 };

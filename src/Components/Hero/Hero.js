@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import './Hero.css';
-import QRCode from '../QRCode/QRCode';
+// import QRCode from '../QRCode/QRCode';
 import HeroPhone from '../../Images/herophone.png';
 
 const Hero = () => {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    /*const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     useEffect(() => {
         const handleResize = () => setWindowWidth(window.innerWidth);
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
-    }, []);
+    }, []);*/
 
     return (
         <div className='Hero'>
