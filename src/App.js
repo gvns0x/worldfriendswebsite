@@ -1,4 +1,5 @@
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Components/Header/Header.js'
 import Feature from './Components/Feature/Feature.js';
 import Hero from './Components/Hero/Hero.js';
@@ -15,9 +16,15 @@ import Reset from './Images/FeatureImages/Property 1=4_Reset.png'
 import Availability from './Images/FeatureImages/Property 1=5_Availability.png'
 import DarkMode from './Images/FeatureImages/DarkModeRows.png'
 
+// Pages
+import TermsAndConditions from './Pages/TermsAndConditions.js';
+
 function App() {
   return (
+    <Router>
     <div className="App">
+    <Routes>
+    <Route path="/" element={
       <header className="App-header">
         <Header/>
         <Hero/>
@@ -32,7 +39,11 @@ function App() {
         </div>
         <Letter/>
       </header>
+    }/>
+    <Route path="/tc" element={<TermsAndConditions />} />
+    </Routes>
     </div>
+    </Router>
   );
 }
 
