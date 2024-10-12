@@ -92,7 +92,7 @@ const TermsAndConditions = () => {
 
 <h2>13. Contact Us</h2>
 
-<p>If you have any questions about these Terms, please contact us at:</p>
+<p>If you have any questions about these Terms, please contact us at:</p><br/>
 
 <p>Email: gvns0x@gmail.com<br/><br/>
 Twitter: @gvns0x</p>
