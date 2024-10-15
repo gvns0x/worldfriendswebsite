@@ -18,7 +18,7 @@ import DarkMode from './Images/FeatureImages/DarkModeRows.png'
 
 // Pages
 import TermsAndConditions from './Pages/TermsAndConditions/TermsAndConditions';
-import PrivacyPolicy from './Pages/PrivacyPolicy/PrivacyPolicy';
+// import PrivacyPolicy from './Pages/PrivacyPolicy/PrivacyPolicy';
 
 function App() {
   return (
@@ -42,7 +42,7 @@ function App() {
       </header>
     }/>
     <Route path="/tc" element={<TermsAndConditions />} />
-    <Route path="/pp" element={<PrivacyPolicy />} />
+    {/*<Route path="/pp" element={<PrivacyPolicy />} />*/}
     </Routes>
     </div>
     </Router>
