@@ -17,7 +17,7 @@ import Availability from './Images/FeatureImages/Property 1=5_Availability.png'
 import DarkMode from './Images/FeatureImages/DarkModeRows.png'
 
 // Pages
-import TermsAndConditions from './Pages/TermsAndConditions/TermsAndConditions';
+import TermsAndConditions from './Pages/TermsAndConditions';
 // import PrivacyPolicy from './Pages/PrivacyPolicy/PrivacyPolicy';
 
 function App() {
