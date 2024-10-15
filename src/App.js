@@ -18,7 +18,7 @@ import DarkMode from './Images/FeatureImages/DarkModeRows.png'
 
 // Pages
 import TermsAndConditions from './Pages/TermsAndConditions/TermsAndConditions.js';
-import PrivacyPolicy from './Pages/PrivacyPolicy/PrivacyPolicy';
+import PrivacyPolicy from './Pages/PrivacyPolicy/PrivacyPolicy.js';
 
 function App() {
   return (
