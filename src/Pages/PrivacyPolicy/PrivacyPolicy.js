@@ -10,7 +10,7 @@ const PrivacyPolicy = () => {
 
             <h1>Privacy Policy</h1>
 
-<p>Effective Date: October 12, 2024</p>
+<p>Last update: October 12, 2024</p>
 
 <h2>1. Introduction</h2>
 
