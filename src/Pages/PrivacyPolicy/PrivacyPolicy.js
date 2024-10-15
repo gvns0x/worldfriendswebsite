@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
             <Header/>
             <div className='PrivacyContent'>
 
-            <h1>Privacy Policy for Globezones</h1>
+            <h1>Privacy Policy</h1>
 
 <p>Effective Date: October 12, 2024</p>
 
