@@ -21,7 +21,7 @@ const Header = () => {
 
     const handleCTAClick = (e) => {
         e.preventDefault();
-        window.open('https://globezones.com', '_blank');
+        window.open('https://apps.apple.com/gb/app/globezones/id6714448163', '_blank');
     };
 
     const handleCTAHover = () => {
