@@ -24,7 +24,7 @@ const Hero = () => {
                             {windowWidth > 500 ? (
                             <QRCode/>
                         ) : (
-                            <button className="Hero-button Hero-button-big">Download for iPhone</button>
+                            <a href="https://apps.apple.com/gb/app/globezones/id6714448163" rel="noopener noreferrer" target='_blank'><button className="Hero-button Hero-button-big">Download for iPhone</button></a>
                         )}
                     </div>
                     {windowWidth > 500 ? (
