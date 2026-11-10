@@ -47,14 +47,14 @@ const Header = () => {
                         <img className="Logo" src={Logo} alt="Globezones logo"/>
                         <img className="LogoText" src={LogoText} alt="globezones"/>
                     </Link>
-                </div>
-                <div className="Header-actions">
                     <NavLink
                         to="/updates"
                         className={({ isActive }) => `Updates-link${isActive ? ' is-active' : ''}`}
                     >
                         Updates
                     </NavLink>
+                </div>
+                <div className="Header-actions">
                     <div className="CTA-container"
                          onMouseEnter={handleCTAHover}
                          onMouseLeave={handleCTALeave}
