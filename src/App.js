@@ -1,5 +1,6 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Header from './Components/Header/Header.js'
 import Feature from './Components/Feature/Feature.js';
 import Hero from './Components/Hero/Hero.js';
@@ -21,30 +22,44 @@ import TermsAndConditions from './Pages/TermsAndConditions/TermsAndConditions';
 import PrivacyPolicy from './Pages/PrivacyPolicy/PrivacyPolicy';
 import Updates from './Components/Updates/Updates';
 
+function Site() {
+  const updatesOpen = useLocation().pathname === '/updates';
+
+  useEffect(() => {
+    document.body.style.overflow = updatesOpen ? 'hidden' : '';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [updatesOpen]);
+
+  return (
+    <header className="App-header">
+      <Header/>
+      <Hero/>
+      <JustDragIt/>
+      <div className='Feature-container'>
+        <Feature title="Add people in any timezone" description="All you need is someone’s name and their location. " image={Timezones} />
+        <Feature title="Define availability windows" description="You can define when people are available. Some people use it for worktimes (8am - 6pm), some use it for when their friends are sleeping (10pm - 8am)." image={Availability} />
+        <Feature title="Automatically group with the same time and availability" description="To avoid display duplicate times, people in the same time are automatically grouped." image={Grouping} />
+        <Feature title="Easily convert timezones by dragging" description="With one finger, drag anyone’s time and see the impact on others’ time in their timezone." image={DragVideo} videostyle="500px"/>
+        <Feature title="Reset to current time by double-tapping anywhere" description="Always go back to the current time by double-tapping anywhere." image={Reset} />
+        <Feature title="Switch to dark mode" description="Dark mode is available based on your iPhone system's preferences." image={DarkMode} titleColor="#ffffff" descriptionColor="rgba(255,255,255,0.55)" bgColor="#000000"/>
+      </div>
+      <Letter/>
+      <div className={`Updates-scrim${updatesOpen ? ' is-open' : ''}`} />
+      <Updates open={updatesOpen} />
+    </header>
+  );
+}
+
 function App() {
   return (
     <Router>
     <div className="App">
     <Routes>
-    <Route path="/" element={
-      <header className="App-header">
-        <Header/>
-        <Hero/>
-        <JustDragIt/>
-        <div className='Feature-container'>
-          <Feature title="Add people in any timezone" description="All you need is someone’s name and their location. " image={Timezones} />
-          <Feature title="Define availability windows" description="You can define when people are available. Some people use it for worktimes (8am - 6pm), some use it for when their friends are sleeping (10pm - 8am)." image={Availability} />
-          <Feature title="Automatically group with the same time and availability" description="To avoid display duplicate times, people in the same time are automatically grouped." image={Grouping} />
-          <Feature title="Easily convert timezones by dragging" description="With one finger, drag anyone’s time and see the impact on others’ time in their timezone." image={DragVideo} videostyle="500px"/>
-          <Feature title="Reset to current time by double-tapping anywhere" description="Always go back to the current time by double-tapping anywhere." image={Reset} />
-          <Feature title="Switch to dark mode" description="Dark mode is available based on your iPhone system's preferences." image={DarkMode} titleColor="#ffffff" descriptionColor="rgba(255,255,255,0.55)" bgColor="#000000"/>
-        </div>
-        <Letter/>
-      </header>
-    }/>
-    <Route path="/updates" element={<Updates />} />
     <Route path="/tc" element={<TermsAndConditions />} />
     <Route path="/pp" element={<PrivacyPolicy />} />
+    <Route path="*" element={<Site />} />
     </Routes>
     </div>
     </Router>

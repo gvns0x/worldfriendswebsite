@@ -1,10 +1,38 @@
-.Updates-page {
+.Updates-scrim {
+    position: fixed;
+    inset: 0;
+    z-index: 500;
+    pointer-events: none;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    background-color: rgba(255, 255, 255, 0);
+    transition: backdrop-filter 0.4s ease-out, -webkit-backdrop-filter 0.4s ease-out, background-color 0.4s ease-out;
+}
+
+.Updates-scrim.is-open {
+    pointer-events: auto;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.Updates-layer {
+    position: fixed;
+    z-index: 600;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
     max-width: 738px;
-    min-height: 100vh;
-    padding: 16px;
     box-sizing: border-box;
-    background-color: #fff;
+    padding: 0 16px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}
+
+.Updates-layer.is-open {
+    opacity: 1;
 }
 
 .Updates {
@@ -39,7 +67,14 @@
 }
 
 @media screen and (min-width: 738px) {
-    .Updates-page {
+    .Updates-layer {
         padding: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .Updates-scrim,
+    .Updates-layer {
+        transition: none;
     }
 }

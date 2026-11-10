@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import '../Header/Header.css'
 import Logo from '../../Images/logo.png'
 import CTA from '../../Components/CTA/CTA.js'
@@ -7,6 +7,7 @@ import LogoText from '../../Images/logotext.png'
 import QRCode from '../QRCode/QRCode.js'
 
 const Header = () => {
+    const updatesOpen = useLocation().pathname === '/updates';
     const [showQRCode, setShowQRCode] = useState(false);
     const [isHovered, setIsHovered] = useState(false);
     const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 500);
@@ -48,8 +49,9 @@ const Header = () => {
                         <img className="LogoText" src={LogoText} alt="globezones"/>
                     </Link>
                     <NavLink
-                        to="/updates"
-                        className={({ isActive }) => `Updates-link${isActive ? ' is-active' : ''}`}
+                        to={updatesOpen ? '/' : '/updates'}
+                        className={() => `Updates-link${updatesOpen ? ' is-active' : ''}`}
+                        aria-expanded={updatesOpen}
                     >
                         Updates
                     </NavLink>

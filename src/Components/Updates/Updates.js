@@ -1,11 +1,9 @@
 import React from 'react';
 import './Updates.css';
-import Header from '../Header/Header';
 
-const Updates = () => {
+const Updates = ({ open }) => {
     return (
-        <div className="Updates-page">
-            <Header />
+        <div className={`Updates-layer${open ? ' is-open' : ''}`} aria-hidden={!open}>
             <div className="Updates">
                 <h2 style={{fontSize:'14px'}}>v1.4 <p style={{color:'rgba(0,0,0,.4)'}}>Nov 2026</p></h2>
                 <ul className="body-grey">
