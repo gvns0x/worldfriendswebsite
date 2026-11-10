@@ -1,0 +1,45 @@
+.Updates-page {
+    width: 100%;
+    max-width: 738px;
+    min-height: 100vh;
+    padding: 16px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.Updates {
+    text-align: left;
+    padding-top: 96px;
+    font-size: 16px;
+}
+
+.Updates h2 {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    margin: 0 0 12px;
+}
+
+.Updates-date {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.Updates ul {
+    margin: 0;
+    padding-left: 20px;
+    line-height: 150%;
+}
+
+.Updates li + li {
+    margin-top: 8px;
+}
+
+@media screen and (min-width: 738px) {
+    .Updates-page {
+        padding: 0;
+    }
+}

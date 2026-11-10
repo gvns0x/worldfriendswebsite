@@ -31,6 +31,41 @@
     justify-content: start;
 }
 
+.Header-logo-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.Header-actions {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.Updates-link {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+.Updates-link:hover {
+    color: #000;
+}
+
+.Updates-link.is-active,
+.Updates-link:active {
+    background-color: rgba(0, 0, 0, 0.045);
+    color:#000;
+}
+
 .LogoText {
     width: auto;
     height: 18px;
@@ -84,6 +119,12 @@
     z-index: 999;
     transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
     pointer-events: none;
+}
+
+@media screen and (max-width: 460px) {
+    .LogoText {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 500px) {
