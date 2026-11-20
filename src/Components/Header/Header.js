@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import '../Header/Header.css'
 import Logo from '../../Images/logo.png'
 import CTA from '../../Components/CTA/CTA.js'
@@ -6,6 +7,7 @@ import LogoText from '../../Images/logotext.png'
 import QRCode from '../QRCode/QRCode.js'
 
 const Header = () => {
+    const updatesOpen = useLocation().pathname === '/updates';
     const [showQRCode, setShowQRCode] = useState(false);
     const [isHovered, setIsHovered] = useState(false);
     const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 500);
@@ -42,26 +44,37 @@ const Header = () => {
         <>
             <div className='Header'>
                 <div className='Header-content'>
-                    <img className="Logo" src={Logo} alt="Globezones logo"/>
-                    <img className="LogoText" src={LogoText} alt="globezones"/>
+                    <Link to="/" className="Header-logo-link">
+                        <img className="Logo" src={Logo} alt="Globezones logo"/>
+                        <img className="LogoText" src={LogoText} alt="globezones"/>
+                    </Link>
+                    <NavLink
+                        to={updatesOpen ? '/' : '/updates'}
+                        className={() => `Updates-link${updatesOpen ? ' is-active' : ''}`}
+                        aria-expanded={updatesOpen}
+                    >
+                        Updates
+                    </NavLink>
                 </div>
-                <div className="CTA-container"
-                     onMouseEnter={handleCTAHover}
-                     onMouseLeave={handleCTALeave}
-                     onClick={handleCTAClick}>
-                    <CTA 
-                        cta={isWideScreen && isHovered ? "Go to the AppStore" : "Download for iPhone"}
-                        isHovered={isHovered}
-                        isWideScreen={isWideScreen}
-                    />
-                    {isWideScreen && isHovered && (
-                        <div className="additional-text">Scan the QR code or</div>
-                    )}
-                    {isWideScreen && (
-                        <div className={`QRCode-hover ${showQRCode ? 'visible' : ''}`}>
-                            <QRCode />
-                        </div>
-                    )}
+                <div className="Header-actions">
+                    <div className="CTA-container"
+                         onMouseEnter={handleCTAHover}
+                         onMouseLeave={handleCTALeave}
+                         onClick={handleCTAClick}>
+                        <CTA 
+                            cta={isWideScreen && isHovered ? "Go to the AppStore" : "Download for iPhone"}
+                            isHovered={isHovered}
+                            isWideScreen={isWideScreen}
+                        />
+                        {isWideScreen && isHovered && (
+                            <div className="additional-text">Scan the QR code or</div>
+                        )}
+                        {isWideScreen && (
+                            <div className={`QRCode-hover ${showQRCode ? 'visible' : ''}`}>
+                                <QRCode />
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
             {isWideScreen && <div className={`blur-overlay ${showQRCode ? 'active' : ''}`}></div>}

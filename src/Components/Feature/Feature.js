@@ -5,7 +5,7 @@ function Feature({ title, description, image, titleColor, descriptionColor, bgCo
         <div style={{ backgroundColor: bgColor }} className="Feature">
             <div className='Feature-content'>
                 <h3 style={{ color: titleColor }}>{title}</h3>
-                <p style={{ color: descriptionColor }}>{description}</p>
+                <p className="body-grey" style={{ color: descriptionColor }}>{description}</p>
             </div>
             {image.endsWith('.mp4') ? (
                 <video className="FeatureVideo" autoPlay loop muted playsInline controls={false}>

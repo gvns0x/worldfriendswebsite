@@ -1,0 +1,89 @@
+.Updates-scrim {
+    position: fixed;
+    inset: 0;
+    z-index: 500;
+    pointer-events: none;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    background-color: rgba(255, 255, 255, 0);
+    transition: backdrop-filter 0.4s ease-out, -webkit-backdrop-filter 0.4s ease-out, background-color 0.4s ease-out;
+}
+
+.Updates-scrim.is-open {
+    pointer-events: auto;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.Updates-layer {
+    position: fixed;
+    z-index: 600;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 738px;
+    box-sizing: border-box;
+    padding: 0 16px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}
+
+.Updates-layer.is-open {
+    opacity: 1;
+}
+
+.Updates {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 96px;
+    font-size: 16px;
+    gap: 40px;
+}
+
+.Update-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.Updates h2 {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+}
+
+.Updates-date {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.Updates ul {
+    margin: 0;
+    padding-left: 20px;
+    line-height: 150%;
+}
+
+.Updates li + li {
+    margin-top: 8px;
+}
+
+@media screen and (min-width: 738px) {
+    .Updates-layer {
+        padding: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .Updates-scrim,
+    .Updates-layer {
+        transition: none;
+    }
+}
