@@ -36,9 +36,18 @@
 }
 
 .Updates {
+    display: flex;
+    flex-direction: column;
     text-align: left;
     padding-top: 96px;
     font-size: 16px;
+    gap: 40px;
+}
+
+.Update-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .Updates h2 {
@@ -48,7 +57,7 @@
     font-size: 16px;
     font-weight: 600;
     color: #000;
-    margin: 0 0 12px;
+    margin: 0;
 }
 
 .Updates-date {
